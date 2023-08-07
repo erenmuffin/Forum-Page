@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <title>Me Forum</title>
+    <script defer src="./functions.js"></script>
+</head>
+<body>
+    <div class="frame">
+        <p class="me">Me</p>
+        <div class="info">
+            <div class="photo">
+                <img src="pp2.png" alt="profile" class="profilepicture" id="changeimage">
+            </div>
+            <div class="text">
+                <p id="val_name">John Doe</p>
+                <p id="descrip">Software Engineer Student</p>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="text-content">
+                <form id="myContents">
+                <p>Image</p>
+                <input class="upload" type="file" id="imagesource" name="img" accept="image/*">
+                <p>Name</p>
+                <input class="input" type="text" id="name" name="name">
+                <p>E-mail</p>
+                <input class="input" type="text" id="email" name="email" >
+                <p>Description</p>
+                <input class="input" type="text" id="desc" name="desc" >
+                <p>Age</p>
+                <input class="input" type="text" id="age" name="age" >
+                <p>Hobby</p>
+                <input class="input" type="text" id="hobby" name="hobby" ><br>
+                </form>
+                <input type="submit" value="Submit" onclick="onSubmit()" >
+                <input type="reset" value="Reset" onclick="clearingForm()" >
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
